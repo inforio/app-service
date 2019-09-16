@@ -1,0 +1,7 @@
+    <div class="form-group">
+        <label class="control-label" for="nome">Nome</label>
+        <input type="text" class="form-control" id="nome" name="nome" autofocus autocomplete="false" #nome>
+    </div>        
+          
+    <button class="btn  btn-primary" (click)="adicionar(nome.value); nome.value = ''"
+          [disabled]="nome.length == 0">salvar</button>

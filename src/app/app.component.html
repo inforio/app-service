@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <app-cadastro-funcionario></app-cadastro-funcionario>
+    </div>
+
+    <div class="col-2" *ngFor="let f of funcionarios">
+      <app-pesquisa-funcionario [funcionario]=f></app-pesquisa-funcionario>
+    </div>
+
+  </div>
+
+</div>
